@@ -46,7 +46,7 @@ build: object
 
 k210: build
 	@riscv64-unknown-elf-objcopy $(kernel) --strip-all -O binary $(image)
-	@cp $(OPENSBI) $(k210)
+	@cp $(RUSTSBI) $(k210)
 	dd if=$(image) of=$(k210) bs=128k seek=1
 
 qemu: build
