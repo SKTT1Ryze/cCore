@@ -1,7 +1,7 @@
 // Main function
 #include "sbi/sbi.h"
 
-int c_main() {
+int c_main(int hartid, int sp) {
     sbi_console_putchar('c');
     sbi_console_putchar('C');
     sbi_console_putchar('o');

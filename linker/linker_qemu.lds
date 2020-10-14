@@ -30,14 +30,12 @@ SECTIONS
 
     data_start = .;
 
-    /* .data 字段 */
     .data : {
         *(.data .data.*)
     }
 
     bss_start = .;
 
-    /* .bss 字段 */
     .bss : {
         *(.sbss .bss .bss.*)
     }
